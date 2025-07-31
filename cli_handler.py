@@ -12,13 +12,10 @@ class CLI_Handler():
         self.arguements_handler()
         print(self.arguements)
         if self.arguements[1].lower() != "search":
-            raise ValueError(f"Error - did not start with search insead found - {self.arguements[1]}")
+            raise ValueError(f"Error -search not  found - {self.arguements[1]}")
         if len(self.arguements) > 10:
             raise SyntaxError(f"Error - Too many arguments - found {len(self.arguements)} where max is 10")
-        
-
-       
-
+    
 
         return True
 
